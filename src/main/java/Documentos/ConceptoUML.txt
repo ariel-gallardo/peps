@@ -1,0 +1,36 @@
+Producto
+ID	Nombre	Precio_ID
+CREATE TABLE PRODUCTO(
+    id bigint PRIMARY KEY AUTO_INCREMENT,
+    nombre varchar(50),
+    precio_id bigint NOT NULL,
+    FOREIGN KEY (precio_id) REFERENCES PRECIO(id)
+);
+
+
+Precio
+ID	FechaProducto_ID
+CREATE TABLE PRECIO(
+    id bigint PRIMARY KEY AUTO_INCREMENT,
+    fechaProducto_id bigint NOT NULL,
+    FOREIGN KEY (fechaProducto_id) REFERENCES FECHA(id)
+);
+
+Fecha
+ID	FechaActual	ValorUnitario	PorcentajeVenta	
+CREATE TABLE FECHA(
+    id bigint PRIMARY KEY AUTO_INCREMENT,
+    fechaActual date NOT NULL,
+    valorUnitario double,
+    porcentajeVenta double
+);
+
+Stock
+ID	Cantidad Fecha_ID Vendido
+CREATE TABLE STOCK(
+    id bigint PRIMARY KEY AUTO_INCREMENT,
+    cantidad int NOT NULL,
+    fecha_id bigint NOT NULL,
+    vendido boolean NOT NULL,
+    FOREIGN KEY(fecha_id) REFERENCES FECHA(id)
+);
