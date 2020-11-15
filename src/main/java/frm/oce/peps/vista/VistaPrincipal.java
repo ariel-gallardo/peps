@@ -5,6 +5,13 @@
  */
 package frm.oce.peps.vista;
 
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author ariel
@@ -510,4 +517,324 @@ public class VistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JTextField jTF_VentaMes;
     private javax.swing.JTextField jTF_VentaTotal;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getjB_Cargar() {
+        return jB_Cargar;
+    }
+
+    public void setjB_Cargar(JButton jB_Cargar) {
+        this.jB_Cargar = jB_Cargar;
+    }
+
+    public JButton getjB_CargarFecha() {
+        return jB_CargarFecha;
+    }
+
+    public void setjB_CargarFecha(JButton jB_CargarFecha) {
+        this.jB_CargarFecha = jB_CargarFecha;
+    }
+
+    public JButton getjB_Crear() {
+        return jB_Crear;
+    }
+
+    public void setjB_Crear(JButton jB_Crear) {
+        this.jB_Crear = jB_Crear;
+    }
+
+    public JButton getjB_Registrar() {
+        return jB_Registrar;
+    }
+
+    public void setjB_Registrar(JButton jB_Registrar) {
+        this.jB_Registrar = jB_Registrar;
+    }
+
+    public JButton getjB_Salida() {
+        return jB_Salida;
+    }
+
+    public void setjB_Salida(JButton jB_Salida) {
+        this.jB_Salida = jB_Salida;
+    }
+
+    public JComboBox<String> getjCB_Fecha() {
+        return jCB_Fecha;
+    }
+
+    public void setjCB_Fecha(JComboBox<String> jCB_Fecha) {
+        this.jCB_Fecha = jCB_Fecha;
+    }
+
+    public JComboBox<String> getjCB_Productos() {
+        return jCB_Productos;
+    }
+
+    public void setjCB_Productos(JComboBox<String> jCB_Productos) {
+        this.jCB_Productos = jCB_Productos;
+    }
+
+    public JCheckBox getjC_PrecioUR() {
+        return jC_PrecioUR;
+    }
+
+    public void setjC_PrecioUR(JCheckBox jC_PrecioUR) {
+        this.jC_PrecioUR = jC_PrecioUR;
+    }
+
+    public JLabel getjL_Contabilidad() {
+        return jL_Contabilidad;
+    }
+
+    public void setjL_Contabilidad(JLabel jL_Contabilidad) {
+        this.jL_Contabilidad = jL_Contabilidad;
+    }
+
+    public JLabel getjL_Contabilidad1() {
+        return jL_Contabilidad1;
+    }
+
+    public void setjL_Contabilidad1(JLabel jL_Contabilidad1) {
+        this.jL_Contabilidad1 = jL_Contabilidad1;
+    }
+
+    public JLabel getjL_DisponibilidadS() {
+        return jL_DisponibilidadS;
+    }
+
+    public void setjL_DisponibilidadS(JLabel jL_DisponibilidadS) {
+        this.jL_DisponibilidadS = jL_DisponibilidadS;
+    }
+
+    public JLabel getjL_Fecha() {
+        return jL_Fecha;
+    }
+
+    public void setjL_Fecha(JLabel jL_Fecha) {
+        this.jL_Fecha = jL_Fecha;
+    }
+
+    public JLabel getjL_FechaActual() {
+        return jL_FechaActual;
+    }
+
+    public void setjL_FechaActual(JLabel jL_FechaActual) {
+        this.jL_FechaActual = jL_FechaActual;
+    }
+
+    public JLabel getjL_FechaValor() {
+        return jL_FechaValor;
+    }
+
+    public void setjL_FechaValor(JLabel jL_FechaValor) {
+        this.jL_FechaValor = jL_FechaValor;
+    }
+
+    public JLabel getjL_NuevoProducto() {
+        return jL_NuevoProducto;
+    }
+
+    public void setjL_NuevoProducto(JLabel jL_NuevoProducto) {
+        this.jL_NuevoProducto = jL_NuevoProducto;
+    }
+
+    public JLabel getjL_NuevoRegistro() {
+        return jL_NuevoRegistro;
+    }
+
+    public void setjL_NuevoRegistro(JLabel jL_NuevoRegistro) {
+        this.jL_NuevoRegistro = jL_NuevoRegistro;
+    }
+
+    public JLabel getjL_Precio() {
+        return jL_Precio;
+    }
+
+    public void setjL_Precio(JLabel jL_Precio) {
+        this.jL_Precio = jL_Precio;
+    }
+
+    public JLabel getjL_PrecioUnitarioR() {
+        return jL_PrecioUnitarioR;
+    }
+
+    public void setjL_PrecioUnitarioR(JLabel jL_PrecioUnitarioR) {
+        this.jL_PrecioUnitarioR = jL_PrecioUnitarioR;
+    }
+
+    public JLabel getjL_Productos() {
+        return jL_Productos;
+    }
+
+    public void setjL_Productos(JLabel jL_Productos) {
+        this.jL_Productos = jL_Productos;
+    }
+
+    public JLabel getjL_Resumen() {
+        return jL_Resumen;
+    }
+
+    public void setjL_Resumen(JLabel jL_Resumen) {
+        this.jL_Resumen = jL_Resumen;
+    }
+
+    public JLabel getjL_Salida() {
+        return jL_Salida;
+    }
+
+    public void setjL_Salida(JLabel jL_Salida) {
+        this.jL_Salida = jL_Salida;
+    }
+
+    public JLabel getjL_Stock() {
+        return jL_Stock;
+    }
+
+    public void setjL_Stock(JLabel jL_Stock) {
+        this.jL_Stock = jL_Stock;
+    }
+
+    public JLabel getjL_Titulo() {
+        return jL_Titulo;
+    }
+
+    public void setjL_Titulo(JLabel jL_Titulo) {
+        this.jL_Titulo = jL_Titulo;
+    }
+
+    public JLabel getjL_UnidadesR() {
+        return jL_UnidadesR;
+    }
+
+    public void setjL_UnidadesR(JLabel jL_UnidadesR) {
+        this.jL_UnidadesR = jL_UnidadesR;
+    }
+
+    public JLabel getjL_UnidadesS() {
+        return jL_UnidadesS;
+    }
+
+    public void setjL_UnidadesS(JLabel jL_UnidadesS) {
+        this.jL_UnidadesS = jL_UnidadesS;
+    }
+
+    public JLabel getjL_VentaMes() {
+        return jL_VentaMes;
+    }
+
+    public void setjL_VentaMes(JLabel jL_VentaMes) {
+        this.jL_VentaMes = jL_VentaMes;
+    }
+
+    public JLabel getjL_VentaTotal() {
+        return jL_VentaTotal;
+    }
+
+    public void setjL_VentaTotal(JLabel jL_VentaTotal) {
+        this.jL_VentaTotal = jL_VentaTotal;
+    }
+
+    public JPanel getjP_Principal() {
+        return jP_Principal;
+    }
+
+    public void setjP_Principal(JPanel jP_Principal) {
+        this.jP_Principal = jP_Principal;
+    }
+
+    public JPanel getjP_Producto() {
+        return jP_Producto;
+    }
+
+    public void setjP_Producto(JPanel jP_Producto) {
+        this.jP_Producto = jP_Producto;
+    }
+
+    public JPanel getjP_Registro() {
+        return jP_Registro;
+    }
+
+    public void setjP_Registro(JPanel jP_Registro) {
+        this.jP_Registro = jP_Registro;
+    }
+
+    public JPanel getjP_Salida() {
+        return jP_Salida;
+    }
+
+    public void setjP_Salida(JPanel jP_Salida) {
+        this.jP_Salida = jP_Salida;
+    }
+
+    public JTextField getjTF_DisponibiliadS() {
+        return jTF_DisponibiliadS;
+    }
+
+    public void setjTF_DisponibiliadS(JTextField jTF_DisponibiliadS) {
+        this.jTF_DisponibiliadS = jTF_DisponibiliadS;
+    }
+
+    public JTextField getjTF_NuevoProducto() {
+        return jTF_NuevoProducto;
+    }
+
+    public void setjTF_NuevoProducto(JTextField jTF_NuevoProducto) {
+        this.jTF_NuevoProducto = jTF_NuevoProducto;
+    }
+
+    public JTextField getjTF_Precio() {
+        return jTF_Precio;
+    }
+
+    public void setjTF_Precio(JTextField jTF_Precio) {
+        this.jTF_Precio = jTF_Precio;
+    }
+
+    public JTextField getjTF_PrecioUR() {
+        return jTF_PrecioUR;
+    }
+
+    public void setjTF_PrecioUR(JTextField jTF_PrecioUR) {
+        this.jTF_PrecioUR = jTF_PrecioUR;
+    }
+
+    public JTextField getjTF_Stock() {
+        return jTF_Stock;
+    }
+
+    public void setjTF_Stock(JTextField jTF_Stock) {
+        this.jTF_Stock = jTF_Stock;
+    }
+
+    public JTextField getjTF_UnidadesR() {
+        return jTF_UnidadesR;
+    }
+
+    public void setjTF_UnidadesR(JTextField jTF_UnidadesR) {
+        this.jTF_UnidadesR = jTF_UnidadesR;
+    }
+
+    public JTextField getjTF_UnidadesS() {
+        return jTF_UnidadesS;
+    }
+
+    public void setjTF_UnidadesS(JTextField jTF_UnidadesS) {
+        this.jTF_UnidadesS = jTF_UnidadesS;
+    }
+
+    public JTextField getjTF_VentaMes() {
+        return jTF_VentaMes;
+    }
+
+    public void setjTF_VentaMes(JTextField jTF_VentaMes) {
+        this.jTF_VentaMes = jTF_VentaMes;
+    }
+
+    public JTextField getjTF_VentaTotal() {
+        return jTF_VentaTotal;
+    }
+
+    public void setjTF_VentaTotal(JTextField jTF_VentaTotal) {
+        this.jTF_VentaTotal = jTF_VentaTotal;
+    }
 }
