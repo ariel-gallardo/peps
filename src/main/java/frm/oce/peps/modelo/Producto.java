@@ -9,23 +9,23 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Map;
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.MapKey;
 import javax.persistence.MapKeyColumn;
 import javax.persistence.MapKeyTemporal;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
-import javax.persistence.Table;
 import javax.persistence.TemporalType;
 /**
  *
  * @author ariel
  */
 @Entity
+@NamedQueries(@NamedQuery(name = "Producto.TODOS", query = "SELECT p FROM Producto p"))
 public class Producto implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
