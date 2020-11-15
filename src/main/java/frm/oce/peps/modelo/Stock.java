@@ -27,7 +27,8 @@ public class Stock implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private long cantidad;
-    private boolean vendido;
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date fecha_baja;
     @OneToOne(cascade = CascadeType.ALL)
     private Valor valor;
     public Stock() {
@@ -40,19 +41,11 @@ public class Stock implements Serializable {
     public Stock(long cantidad, Valor valor) {
         this.cantidad = cantidad;
         this.valor = valor;
-        this.vendido = false;
     }
 
-    public Stock(long cantidad, boolean vendido, Valor valor) {
+    public Stock(long cantidad, Date fecha_baja, Valor valor) {
         this.cantidad = cantidad;
-        this.vendido = vendido;
-        this.valor = valor;
-    }
-
-    public Stock(long id, long cantidad, boolean vendido, Valor valor) {
-        this.id = id;
-        this.cantidad = cantidad;
-        this.vendido = vendido;
+        this.fecha_baja = fecha_baja;
         this.valor = valor;
     }
     
@@ -72,20 +65,20 @@ public class Stock implements Serializable {
         this.cantidad = cantidad;
     }
 
-    public boolean isVendido() {
-        return vendido;
-    }
-
-    public void setVendido(boolean vendido) {
-        this.vendido = vendido;
-    }
-
     public Valor getValor() {
         return valor;
     }
 
     public void setValor(Valor valor) {
         this.valor = valor;
+    }
+
+    public Date getFecha_baja() {
+        return fecha_baja;
+    }
+
+    public void setFecha_baja(Date fecha_baja) {
+        this.fecha_baja = fecha_baja;
     }
     
 }

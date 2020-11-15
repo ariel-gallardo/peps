@@ -32,7 +32,7 @@ public class Producto implements Serializable {
     private long id;
     private String nombre;
     @OneToMany(cascade = CascadeType.ALL)                                       //https://docs.oracle.com/javaee/6/api/javax/persistence/MapKeyTemporal.html
-    @MapKeyColumn(name = "fecha")
+    @MapKeyColumn(name = "fecha_alta")
     @MapKeyTemporal(TemporalType.DATE)
     @JoinColumn(name = "producto_id")
     private Map<Date,Stock> stock;
