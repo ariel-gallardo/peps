@@ -30,12 +30,14 @@ public final class ControladorPrincipal {
     public static void main(String[] args) {
         entityManagerFactory = Persistence.createEntityManagerFactory(PERSISTENCEUNITNAME);
         entityManager = entityManagerFactory.createEntityManager();
-        Producto p = new Producto("Memoria Ram");
-        HashMap stock = new HashMap<Date,Stock>();
-            stock.put(new Date(120,10,14), new Stock(500, new Valor(3000, 10)));
-            stock.put(new Date(), new Stock(800,new Valor(4000, 10)));
-        p.setStock(stock);
-        persistirObjeto(p);
+        /*
+            Producto p = new Producto("Memoria Ram");
+            HashMap stock = new HashMap<Date,Stock>();
+                stock.put(new Date(120,10,14), new Stock(500, new Valor(3000, 10)));
+                stock.put(new Date(), new Stock(800,new Valor(4000, 10)));
+            p.setStock(stock);
+            persistirObjeto(p);
+        */
     }
     
     public static void persistirObjeto(Object o){
