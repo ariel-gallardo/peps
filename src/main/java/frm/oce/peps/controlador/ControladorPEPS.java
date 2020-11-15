@@ -5,10 +5,18 @@
  */
 package frm.oce.peps.controlador;
 
+import frm.oce.peps.vista.VistaPEPS;
+
 /**
  *
  * @author ariel
  */
 public class ControladorPEPS {
+    private final VistaPEPS vistaPEPS;
+
+    public ControladorPEPS(VistaPEPS vistaPEPS) {
+        this.vistaPEPS = vistaPEPS;
+        this.vistaPEPS.setVisible(true);
+    }
     
 }

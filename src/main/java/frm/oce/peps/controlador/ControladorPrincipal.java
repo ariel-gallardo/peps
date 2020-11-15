@@ -8,6 +8,7 @@ package frm.oce.peps.controlador;
 import frm.oce.peps.modelo.Producto;
 import frm.oce.peps.modelo.Stock;
 import frm.oce.peps.modelo.Valor;
+import frm.oce.peps.vista.VistaPEPS;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -26,6 +27,7 @@ public final class ControladorPrincipal {
     private static EntityManagerFactory entityManagerFactory;
     private static EntityManager entityManager;
     private static EntityTransaction entityTransaction;
+    private static ControladorPEPS controladorPEPS;
     
     public static void main(String[] args) {
         entityManagerFactory = Persistence.createEntityManagerFactory(PERSISTENCEUNITNAME);
@@ -38,6 +40,7 @@ public final class ControladorPrincipal {
             p.setStock(stock);
             persistirObjeto(p);
         */
+        controladorPEPS = new ControladorPEPS(new VistaPEPS());
     }
     
     public static void persistirObjeto(Object o){
